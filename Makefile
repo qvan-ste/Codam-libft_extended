@@ -1,5 +1,6 @@
-GREEN =\033[0;32m
 RED =\033[0;31m
+ORANGE=\033[0;33m
+GREEN =\033[0;32m
 NO_COLOUR =\033[0m
 
 CFILES = $(wildcard src/libft/*.c) $(wildcard src/ft_printf/*.c) \
@@ -12,7 +13,7 @@ CFLAGS = -Wall -Wextra -Werror
 NAME = libft.a
 
 .c.o:
-	@echo "[libft] Compiling: $<"
+	@echo "${ORANGE}[libft] Compiling: $<${NO_COLOUR}"
 	@CC -c $(CFLAGS) $< -o $@
 
 all: $(NAME)
