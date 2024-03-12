@@ -1,0 +1,10 @@
+#VSCode
+*.vscode
+*.*dSYM
+
+#Compiled files
+*.o
+*.a
+
+#OS files/folders
+.DS_Store
