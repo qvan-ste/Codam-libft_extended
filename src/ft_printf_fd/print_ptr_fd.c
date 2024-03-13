@@ -6,7 +6,7 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/13 15:00:35 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/03/13 14:36:32 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/03/13 15:58:56 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static void	write_ptr_fd(const int fd, uintptr_t ptr)
 	write(fd, &c, 1);
 }
 
-int	print_ptr(const int fd, uintptr_t ptr)
+int	print_ptr_fd(const int fd, uintptr_t ptr)
 {
 	if (!ptr)
 	{

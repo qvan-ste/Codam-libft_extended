@@ -8,7 +8,7 @@ CFILES = $(wildcard src/libft/*.c) $(wildcard src/ft_printf/*.c) \
 
 OFILES = $(CFILES:.c=.o)
 			
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Werror -Wextra
 
 CC = cc
 
@@ -30,8 +30,12 @@ clean:
 
 fclean:  clean
 	@rm -f $(NAME)
-	@echo "${RED}[libft] Removing libft.a${NO_COLOUR}"
+	@echo "${RED}[libft] Removing ${NAME}${NO_COLOUR}"
+
+libclean:
+	@rm -f $(NAME)
+	@echo "${RED}[libft] Removing ${NAME}${NO_COLOUR}"
 
 re: fclean all
 
-.PHONY:  all clean fclean re
+.PHONY:  all clean fclean re .c.o libclean
