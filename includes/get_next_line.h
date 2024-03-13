@@ -6,7 +6,7 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/18 11:49:14 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/03/13 15:19:10 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/03/13 15:29:21 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,5 @@
 char	*clean_ret(char *full_ret, char **buf, int *error);
 char	*save_buf(char *buf, int *error);
 char	*read_and_append(int fd, char *buf, char **ret);
-char	*get_next_line(int fd);
 
 #endif

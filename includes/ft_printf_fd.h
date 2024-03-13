@@ -6,7 +6,7 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/13 17:49:45 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/03/13 15:19:53 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/03/13 15:29:38 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 # include <unistd.h>
 # include <stdint.h>
 
-int		ft_printf_fd(const int fd, const char *format, ...);
 int		print_hex_upper_fd(const int fd, unsigned int n);
 int		print_hex_lower_fd(const int fd, unsigned int n);
 int		print_ptr_fd(const int fd, uintptr_t ptr);

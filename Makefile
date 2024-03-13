@@ -14,11 +14,11 @@ CC = cc
 
 NAME = libft.a
 
+all: $(NAME)
+
 .c.o:
 	@echo "${ORANGE}[libft] Compiling $<${NO_COLOUR}"
 	@$(CC) -c $(CFLAGS) $< -o $@
-
-all: $(NAME)
 
 $(NAME): $(OFILES)
 	@ar rcs $(NAME) $(OFILES)

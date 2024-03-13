@@ -6,7 +6,7 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/13 17:49:45 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/03/13 14:36:17 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/03/13 15:29:07 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 # include <unistd.h>
 # include <stdint.h>
 
-int			ft_printf(const char *format, ...);
 int			print_char(char c);
 int			print_str(char *s);
 int			print_percent(void);
