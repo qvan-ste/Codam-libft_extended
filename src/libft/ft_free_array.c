@@ -1,28 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_hexlen.c                                        :+:    :+:            */
+/*   ft_free_array.c                                    :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2024/03/06 14:44:17 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/03/13 18:07:53 by qvan-ste      ########   odam.nl         */
+/*   Created: 2024/03/13 18:06:42 by qvan-ste      #+#    #+#                 */
+/*   Updated: 2024/03/13 18:13:52 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
+#include <stdlib.h>
 
-int	ft_hexlen(uintptr_t n)
+void	ft_free_array(char *arr[])
 {
-	int	len;
+	int	i;
 
-	len = 0;
-	if (!n)
-		return (1);
-	while (n)
+	i = 0;
+	while (arr[i])
 	{
-		n /= 16;
-		len++;
+		free(arr[i]);
+		i++;
 	}
-	return (len);
+	free(arr);
 }

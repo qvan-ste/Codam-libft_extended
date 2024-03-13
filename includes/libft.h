@@ -6,7 +6,7 @@
 /*   By: quincy <quincy@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/04 15:16:10 by quincy        #+#    #+#                 */
-/*   Updated: 2024/03/13 15:50:00 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/03/13 18:08:20 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,5 +67,6 @@ int		ft_intlen(long n);
 char	*get_next_line(int fd);
 int		ft_printf_fd(const int fd, const char *format, ...);
 int		ft_printf(const char *format, ...);
+void	ft_free_array(char *arr[]);
 
 #endif
