@@ -6,7 +6,7 @@
 /*   By: quincy <quincy@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/04 15:16:10 by quincy        #+#    #+#                 */
-/*   Updated: 2024/03/13 14:28:58 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/03/13 15:20:06 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,5 +64,8 @@ t_list	*ft_lstlast(t_list *lst);
 void	ft_lstadd_back(t_list **lst, t_list *new);
 int		ft_hexlen(unsigned long n);
 int		ft_intlen(long n);
+char	*get_next_line(int fd);
+int		ft_printf_fd(const int fd, const char *format, ...);
+int		ft_printf(const int fd, const char *format, ...);
 
 #endif
