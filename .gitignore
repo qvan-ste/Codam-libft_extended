@@ -6,5 +6,9 @@
 *.o
 *.a
 
+#Git
+.gitmodules
+.gitignore
+
 #OS files/folders
 .DS_Store
