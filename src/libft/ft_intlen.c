@@ -6,11 +6,9 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/03/06 14:48:19 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/03/12 19:04:34 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/03/13 14:29:24 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "../../includes/libft.h"
 
 int	ft_intlen(long n)
 {

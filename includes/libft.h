@@ -6,7 +6,7 @@
 /*   By: quincy <quincy@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/04 15:16:10 by quincy        #+#    #+#                 */
-/*   Updated: 2024/03/12 19:27:16 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/03/13 14:28:58 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 # define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
-# include <stdint.h>
-# include <limits.h>
 
 typedef struct s_list
 {

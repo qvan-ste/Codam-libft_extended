@@ -6,11 +6,12 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/13 15:32:55 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/03/12 19:30:23 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/03/13 14:34:27 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf_fd.h"
+#include "../../includes/libft.h"
 
 int	print_char_fd(const int fd, char c)
 {

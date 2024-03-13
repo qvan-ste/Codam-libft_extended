@@ -6,11 +6,12 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/12 12:32:07 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/03/12 19:30:16 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/03/13 14:33:49 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf_fd.h"
+#include <stdarg.h>
 
 static int	print_format_fd(const int fd, const char *format, int i, va_list ap)
 {

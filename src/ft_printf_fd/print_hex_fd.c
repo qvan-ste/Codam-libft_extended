@@ -6,11 +6,12 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/13 14:49:54 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/03/12 19:30:39 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/03/13 14:34:40 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf_fd.h"
+#include "../../includes/libft.h"
 
 static void	write_hex_lower_fd(const int fd, unsigned int n)
 {

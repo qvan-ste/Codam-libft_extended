@@ -6,11 +6,12 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/13 15:36:20 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/03/12 19:30:42 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/03/13 14:35:25 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_printf_fd.h"
+#include "../../includes/libft.h"
+#include <limits.h>
 
 int	print_num(const int fd, int n)
 {

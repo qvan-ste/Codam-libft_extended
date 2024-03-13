@@ -6,11 +6,11 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/03/06 14:44:17 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/03/12 19:04:31 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/03/13 14:47:20 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include <stdint.h>
 
 int	ft_hexlen(uintptr_t n)
 {

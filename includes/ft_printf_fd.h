@@ -6,17 +6,14 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/13 17:49:45 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/03/12 19:10:35 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/03/13 14:33:33 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_FD_H
 # define FT_PRINTF_FD_H
-# include <stdarg.h>
 # include <unistd.h>
 # include <stdint.h>
-# include <limits.h>
-# include "libft.h"
 
 int		print_hex_upper_fd(const int fd, unsigned int n);
 int		print_hex_lower_fd(const int fd, unsigned int n);

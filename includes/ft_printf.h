@@ -6,26 +6,23 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/13 17:49:45 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/03/12 19:11:34 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/03/13 14:36:17 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
-# include <stdarg.h>
 # include <unistd.h>
 # include <stdint.h>
-# include <limits.h>
-# include "libft.h"
 
-int		print_hex_upper(unsigned int n);
-int		print_hex_lower(unsigned int n);
-int		print_ptr(uintptr_t ptr);
-int		print_char(char c);
-int		print_str(char *s);
-int		print_num(int n);
-int		print_unsigned(long n);
-int		print_percent(void);
-int		ft_printf(const char *format, ...);
+int			ft_printf(const char *format, ...);
+int			print_char(char c);
+int			print_str(char *s);
+int			print_percent(void);
+int			print_hex_upper(unsigned int n);
+int			print_hex_lower(unsigned int n);
+int			print_num(int n);
+int			print_unsigned(long n);
+int			print_ptr(uintptr_t ptr);
 
 #endif

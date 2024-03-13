@@ -10,17 +10,19 @@ OFILES = $(CFILES:.c=.o)
 			
 CFLAGS = -Wall -Wextra -Werror
 
+CC = cc
+
 NAME = libft.a
 
 .c.o:
-	@echo "${ORANGE}[libft] Compiling: $<${NO_COLOUR}"
-	@CC -c $(CFLAGS) $< -o $@
+	@echo "${ORANGE}[libft] Compiling $<${NO_COLOUR}"
+	@$(CC) -c $(CFLAGS) $< -o $@
 
 all: $(NAME)
 
 $(NAME): $(OFILES)
 	@ar rcs $(NAME) $(OFILES)
-	@echo "${GREEN}[libft] Libft compiled${NO_COLOUR}"
+	@echo "${GREEN}[libft] Compiling finished${NO_COLOUR}"
 
 clean:
 	@rm -f $(OFILES)
@@ -28,7 +30,7 @@ clean:
 
 fclean:  clean
 	@rm -f $(NAME)
-	@echo "${RED}[libft] Removing .a file${NO_COLOUR}"
+	@echo "${RED}[libft] Removing libft.a${NO_COLOUR}"
 
 re: fclean all
 
