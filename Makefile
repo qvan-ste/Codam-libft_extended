@@ -17,24 +17,24 @@ NAME = libft.a
 all: $(NAME)
 
 .c.o:
-	@echo "${ORANGE}[libft] Compiling $<${NO_COLOUR}"
+	@echo "$(ORANGE)[libft] Compiling $<$(NO_COLOUR)"
 	@$(CC) -c $(CFLAGS) $< -o $@
 
 $(NAME): $(OFILES)
 	@ar rcs $(NAME) $(OFILES)
-	@echo "${GREEN}[libft] Compiling finished${NO_COLOUR}"
+	@echo "$(GREEN)[libft] Compiling finished$(NO_COLOUR)"
 
 clean:
 	@rm -f $(OFILES)
-	@echo "${RED}[libft] Removing .o files${NO_COLOUR}"
+	@echo "$(RED)[libft] Removing .o files$(NO_COLOUR)"
 
 fclean:  clean
 	@rm -f $(NAME)
-	@echo "${RED}[libft] Removing ${NAME}${NO_COLOUR}"
+	@echo "$(RED)[libft] Removing $(NAME)$(NO_COLOUR)"
 
 libclean:
 	@rm -f $(NAME)
-	@echo "${RED}[libft] Removing ${NAME}${NO_COLOUR}"
+	@echo "$(RED)[libft] Removing $(NAME)$(NO_COLOUR)"
 
 re: fclean all
 
