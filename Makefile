@@ -25,16 +25,18 @@ $(NAME): $(OFILES)
 	@echo "$(GREEN)[libft] Compiling finished$(NO_COLOUR)"
 
 clean:
-	@rm -f $(OFILES)
 	@echo "$(RED)[libft] Removing .o files$(NO_COLOUR)"
+	@rm -f $(OFILES)
+
 
 fclean:  clean
-	@rm -f $(NAME)
 	@echo "$(RED)[libft] Removing $(NAME)$(NO_COLOUR)"
+	@rm -f $(NAME)
+
 
 libclean:
-	@rm -f $(NAME)
 	@echo "$(RED)[libft] Removing $(NAME)$(NO_COLOUR)"
+	@rm -f $(NAME)
 
 re: fclean all
 
