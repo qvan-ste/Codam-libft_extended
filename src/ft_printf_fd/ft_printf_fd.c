@@ -6,7 +6,7 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/12 12:32:07 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/03/17 13:54:41 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/03/17 14:32:26 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static int	print_format_fd(const int fd, const char *format, int i, va_list ap)
 	else if (format[i] == 'p')
 		return (print_ptr_fd(va_arg(ap, uintptr_t), fd));
 	else if (format[i] == 'd' || format[i] == 'i')
-		return (print_num_fd(va_arg(ap, int), fd));	
+		return (print_num_fd(va_arg(ap, int), fd));
 	else if (format[i] == 'u')
 		return (print_unsigned_fd(va_arg(ap, unsigned int), fd));
 	else if (format[i] == 'x')
