@@ -6,14 +6,14 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/03/06 13:57:57 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/03/13 14:38:00 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/03/17 13:24:55 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <limits.h>
 #include <unistd.h>
 
-void	ft_putnbr(long n)
+void	ft_putnbr(int n)
 {
 	char	char_n;
 
