@@ -6,11 +6,11 @@
 /*   By: quincy <quincy@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/04 21:35:50 by quincy        #+#    #+#                 */
-/*   Updated: 2024/03/12 19:06:06 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/04/17 13:58:15 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

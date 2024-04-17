@@ -6,11 +6,11 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/04/15 14:12:48 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/04/15 14:13:11 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/04/17 13:57:01 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 long long	ft_atoll(const char *str)
 {

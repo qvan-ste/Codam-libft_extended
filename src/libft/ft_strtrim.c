@@ -6,11 +6,11 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/09 14:09:47 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/03/12 19:06:09 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/04/17 13:58:17 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 static int	is_in_arr(const char c, char const *arr)
 {

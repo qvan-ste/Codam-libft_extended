@@ -6,11 +6,11 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/02 16:52:41 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/03/13 14:21:39 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/04/17 13:57:04 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

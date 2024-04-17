@@ -6,11 +6,11 @@
 /*   By: quincy <quincy@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/06 16:17:16 by quincy        #+#    #+#                 */
-/*   Updated: 2024/03/13 13:33:18 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/04/17 13:57:06 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 void	*ft_calloc(size_t count, size_t size)
 {

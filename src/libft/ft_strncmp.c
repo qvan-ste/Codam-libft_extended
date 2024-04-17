@@ -6,11 +6,11 @@
 /*   By: quincy <quincy@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/04 21:41:27 by quincy        #+#    #+#                 */
-/*   Updated: 2024/03/13 14:32:11 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/04/17 13:58:09 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

@@ -6,11 +6,11 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/02/22 12:12:34 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/03/13 13:15:34 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/04/17 13:58:11 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 char	*ft_strndup(const char *s, size_t n)
 {

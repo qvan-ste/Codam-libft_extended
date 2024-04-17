@@ -6,12 +6,12 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/13 15:00:35 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/03/17 13:47:05 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/04/17 13:56:44 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_printf_fd.h"
-#include "../../includes/libft.h"
+#include "../../include/ft_printf_fd.h"
+#include "../../include/libft.h"
 
 static void	write_ptr_fd(intptr_t ptr, const int fd)
 {

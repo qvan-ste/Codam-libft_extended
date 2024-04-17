@@ -6,11 +6,11 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/02 17:54:03 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/03/12 19:05:04 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/04/17 13:57:41 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 static void	reverse_copy_str(char *char_dest, const char *char_src, size_t len)
 {

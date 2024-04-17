@@ -6,11 +6,11 @@
 /*   By: quincy <quincy@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/04 14:38:34 by quincy        #+#    #+#                 */
-/*   Updated: 2024/03/12 19:05:50 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/04/17 13:58:03 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {

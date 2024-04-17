@@ -6,11 +6,11 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/02/09 12:05:37 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/03/12 19:04:55 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/04/17 13:57:27 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 int	ft_lstsize(t_list *lst)
 {
