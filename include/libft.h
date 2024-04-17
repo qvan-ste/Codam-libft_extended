@@ -6,7 +6,7 @@
 /*   By: quincy <quincy@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/04 15:16:10 by quincy        #+#    #+#                 */
-/*   Updated: 2024/04/15 14:17:01 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/04/17 16:05:14 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,13 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }	t_list;
+
+typedef struct s_listdoub
+{
+	void				*content;
+	struct s_listdoub	*prev;
+	struct s_listdoub	*next;
+}	t_listdoub;
 
 int			ft_isalpha(int c);
 int			ft_isdigit(int c);
@@ -62,9 +69,14 @@ void		ft_putnbr_fd(int n, int fd);
 void		ft_putnbr(long n);
 t_list		*ft_lstnew(void *content);
 void		ft_lstadd_front(t_list **lst, t_list *new);
+void		ft_lstadd_back(t_list **lst, t_list *new);
 int			ft_lstsize(t_list *lst);
 t_list		*ft_lstlast(t_list *lst);
-void		ft_lstadd_back(t_list **lst, t_list *new);
+t_listdoub	*ft_lstdoubnew(void *content);
+void		ft_lstdoubadd_front(t_listdoub **lst, t_listdoub *new);
+void		ft_lstdoubadd_back(t_listdoub **lst, t_listdoub *new);
+int			ft_lstdoubsize(t_listdoub *lst);
+t_listdoub	*ft_lstdoublast(t_listdoub *lst);
 int			ft_hexlen(unsigned long n);
 int			ft_intlen(long n);
 char		*get_next_line(int fd);
