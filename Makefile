@@ -1,4 +1,4 @@
-# Coulours
+# Colours
 RED =\033[0;31m
 ORANGE=\033[0;33m
 GREEN =\033[0;32m
@@ -40,11 +40,13 @@ LISTS = $(LISTSDIR)/ft_lstadd_back.c $(LISTSDIR)/ft_lstadd_front.c \
 
 MATH = $(MATHDIR)/ft_hexlen.c $(MATHDIR)/ft_intlen.c
 
-MEMORY = $(MEMORYDIR)/ft_bzero.c $(MEMORYDIR)/ft_calloc.c \
-			$(MEMORYDIR)/ft_free_matrix.c
+MEMORY = $(MEMORYDIR)/ft_bzero.c $(MEMORYDIR)/ft_calloc.c $(MEMORYDIR)/ft_free_matrix.c \
+			$(MEMORYDIR)/ft_memchr.c $(MEMORYDIR)/ft_memcmp.c $(MEMORYDIR)/ft_memcpy.c \
+			$(MEMORYDIR)/ft_memmove.c $(MEMORYDIR)/ft_memset.c \
+			$(MEMORYDIR)/ft_realloc.c
 
 OUTPUT = $(OUTPUTDIR)/ft_putchar_fd.c $(OUTPUTDIR)/ft_putendl_fd.c \
-			$(OUTPUTDIR)/output/ft_putnbr_fd.c $(OUTPUTDIR)/ft_putnbr.c \
+			$(OUTPUTDIR)/ft_putnbr_fd.c $(OUTPUTDIR)/ft_putnbr.c \
 			$(OUTPUTDIR)/ft_putstr_fd.c
 
 STRINGS = $(STRINGSDIR)/ft_atoi.c $(STRINGSDIR)/ft_atoll.c $(STRINGSDIR)/ft_itoa.c \
@@ -55,11 +57,12 @@ STRINGS = $(STRINGSDIR)/ft_atoi.c $(STRINGSDIR)/ft_atoll.c $(STRINGSDIR)/ft_itoa
 			$(STRINGSDIR)/ft_strnstr.c $(STRINGSDIR)/ft_strrchr.c $(STRINGSDIR)/ft_strtrim.c \
 			$(STRINGSDIR)/ft_substr.c
 
-VECTORS = $(VECTORSDIR)/ft_vecadd.c $(VECTORSDIR)/ft_vecdelete.c $(VECTORSDIR)/ft_vecinit.c \
-			$(VECTORSDIR)/ft_vecset.c
+VECTORS = $(VECTORSDIR)/ft_vecappend.c $(VECTORSDIR)/ft_vecinit.c $(VECTORSDIR)/ft_vecset.c \
+			$(VECTORSDIR)/ft_vecget.c $(VECTORSDIR)/ft_vecpop.c $(VECTORSDIR)/ft_vecresize.c \
+			$(VECTORSDIR)/ft_vecinsert.c
 
 CFILES = $(FT_PRINTF) $(FT_PRINTF_FD) $(GET_NEXT_LINE) $(CHARACTERS) \
-			$(LISTS) $(MATH) $(MEMORY) $(STRINGS) $(VECTORS)
+			$(OUTPUT) $(LISTS) $(MATH) $(MEMORY) $(STRINGS) $(VECTORS)
 
 OFILES = $(CFILES:.c=.o)
 

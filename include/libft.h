@@ -6,7 +6,7 @@
 /*   By: quincy <quincy@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/04 15:16:10 by quincy        #+#    #+#                 */
-/*   Updated: 2024/06/05 15:04:08 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/06/05 17:59:53 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,5 +83,6 @@ char		*get_next_line(int fd);
 int			ft_printf_fd(const int fd, const char *format, ...);
 int			ft_printf(const char *format, ...);
 void		ft_free_matrix(char *matrix[]);
+void		*ft_realloc(void *ptr, size_t old_size, size_t new_size);
 
 #endif

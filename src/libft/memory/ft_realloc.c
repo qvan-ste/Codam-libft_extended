@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_vecinit.c                                       :+:    :+:            */
+/*   ft_realloc.c                                       :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2024/06/05 13:04:37 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/06/05 21:12:42 by qvan-ste      ########   odam.nl         */
+/*   Created: 2024/06/05 17:38:26 by qvan-ste      #+#    #+#                 */
+/*   Updated: 2024/06/05 21:11:24 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <vector.h>
+#include <libft.h>
 
-void	ft_vecinit(t_vector *vec, size_t capacity, size_t item_size)
+void	*ft_realloc(void *ptr, size_t old_size, size_t new_size)
 {
-	vec -> item_size = item_size;
-	vec -> capacity = capacity;
-	vec -> size = 0;
-	vec -> items = malloc(item_size * vec -> capacity);
-	if (!vec -> items)
-		vec = NULL;
+	void	*new;
+
+	if (!ptr)
+		return (malloc(new_size));
+	if (!new_size && ptr)
+		return (free(ptr), NULL);
+	new = malloc(new_size);
+	if (!new)
+		return (NULL);
+	ft_memcpy(new, ptr, old_size);
+	free(ptr);
+	return (new);
 }
