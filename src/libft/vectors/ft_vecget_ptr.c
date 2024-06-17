@@ -1,34 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_vecinsert.c                                     :+:    :+:            */
+/*   ft_vecget_ptr.c                                    :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2024/06/05 21:39:21 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/06/17 15:03:45 by qvan-ste      ########   odam.nl         */
+/*   Created: 2024/06/17 15:00:44 by qvan-ste      #+#    #+#                 */
+/*   Updated: 2024/06/17 18:42:55 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
 #include <vector.h>
 
-int	ft_vecinsert(t_vector *vec, void *item, size_t index)
+void	*ft_vecget_ptr(t_vector_ptr *vec, size_t index)
 {
 	if (index >= vec -> size)
-		return (0);
-	if (index < vec -> size - 1)
-	{
-		ft_memmove(vec -> items + (index + 1) * vec -> item_size,
-			vec -> items + index * vec -> item_size,
-			(vec -> size - index) * vec -> item_size);
-		ft_vecset(vec, item, index);
-		vec -> size++;
-	}
-	else
-	{
-		if (!ft_vecappend(vec, item))
-			return (0);
-	}
-	return (1);
+		return (NULL);
+	return (((void **)vec->items)[index]);
 }

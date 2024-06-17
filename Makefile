@@ -57,9 +57,14 @@ STRINGS = $(STRINGSDIR)/ft_atoi.c $(STRINGSDIR)/ft_atoll.c $(STRINGSDIR)/ft_itoa
 			$(STRINGSDIR)/ft_strnstr.c $(STRINGSDIR)/ft_strrchr.c $(STRINGSDIR)/ft_strtrim.c \
 			$(STRINGSDIR)/ft_substr.c
 
-VECTORS = $(VECTORSDIR)/ft_vecappend.c $(VECTORSDIR)/ft_vecinit.c $(VECTORSDIR)/ft_vecset.c \
-			$(VECTORSDIR)/ft_vecget.c $(VECTORSDIR)/ft_vecpop.c $(VECTORSDIR)/ft_vecresize.c \
-			$(VECTORSDIR)/ft_vecinsert.c
+VECTORS = $(VECTORSDIR)/ft_vecappend.c  $(VECTORSDIR)/ft_vecinit.c \
+			$(VECTORSDIR)/ft_vecset.c $(VECTORSDIR)/ft_vecget.c  \
+			$(VECTORSDIR)/ft_vecpop.c $(VECTORSDIR)/ft_vecresize.c \
+			$(VECTORSDIR)/ft_vecinsert.c $(VECTORSDIR)/ft_vecappend_ptr.c \
+			$(VECTORSDIR)/ft_vecinit_ptr.c $(VECTORSDIR)/ft_vecset_ptr.c \
+			$(VECTORSDIR)/ft_vecget_ptr.c  $(VECTORSDIR)/ft_vecpop_ptr.c \
+			$(VECTORSDIR)/ft_vecresize_ptr.c $(VECTORSDIR)/ft_vecinsert_ptr.c \
+			$(VECTORSDIR)/ft_vecdelete_ptr.c
 
 CFILES = $(FT_PRINTF) $(FT_PRINTF_FD) $(GET_NEXT_LINE) $(CHARACTERS) \
 			$(OUTPUT) $(LISTS) $(MATH) $(MEMORY) $(STRINGS) $(VECTORS)
