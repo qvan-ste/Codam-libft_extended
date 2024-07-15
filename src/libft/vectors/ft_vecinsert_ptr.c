@@ -6,7 +6,7 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/17 16:16:43 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/06/17 16:51:21 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/07/15 16:09:07 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ int	ft_vecinsert_ptr(t_vector_ptr *vec, void *item, size_t index)
 	}
 	else
 	{
-		if (!ft_vecappend_ptr(vec, item))
-			return (0);
+		if (ft_vecappend_ptr(vec, item) == -1)
+			return (-1);
 	}
-	return (1);
+	return (0);
 }

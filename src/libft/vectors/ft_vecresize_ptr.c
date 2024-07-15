@@ -6,7 +6,7 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/17 15:49:13 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/06/17 18:43:02 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/07/15 16:07:28 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ int	ft_vecresize_ptr(t_vector_ptr *vec, size_t new_capacity)
 	new_size = new_capacity * vec -> item_size;
 	new = ft_realloc(vec -> items, old_size, new_size);
 	if (!new)
-		return (0);
+		return (-1);
 	vec -> capacity = new_capacity;
 	vec -> items = new;
-	return (1);
+	return (0);
 }
