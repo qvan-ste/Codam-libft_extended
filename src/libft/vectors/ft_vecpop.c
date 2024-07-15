@@ -6,7 +6,7 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/05 21:15:59 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/06/17 16:42:00 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/07/15 14:02:20 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,7 @@ void	ft_vecpop(t_vector *vec, size_t index)
 			vec -> items + (index + 1) * vec -> item_size,
 			(vec -> size - index) * vec -> item_size);
 	}
+	ft_bzero(ft_vecget(vec, vec -> size - 1),
+		(vec -> capacity - vec -> size) * vec -> item_size);
 	vec -> size--;
 }

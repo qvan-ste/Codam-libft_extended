@@ -6,7 +6,7 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/05 17:38:26 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/06/05 21:11:24 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/07/15 13:39:39 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ void	*ft_realloc(void *ptr, size_t old_size, size_t new_size)
 	new = malloc(new_size);
 	if (!new)
 		return (NULL);
+	ft_bzero(new, new_size);
 	ft_memcpy(new, ptr, old_size);
 	free(ptr);
 	return (new);
