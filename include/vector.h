@@ -6,7 +6,7 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/05 13:08:18 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/06/17 18:42:19 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/07/29 14:38:09 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,14 +31,14 @@ typedef struct s_vector_ptr
 	size_t		size;
 }	t_vector_ptr;
 
-void	ft_vecinit(t_vector *vec, size_t capacity, size_t item_size);
+int	ft_vecinit(t_vector *vec, size_t capacity, size_t item_size);
 int		ft_vecappend(t_vector *vec, void *item);
 int		ft_vecresize(t_vector *vec, size_t new_capacity);
 void	ft_vecset(t_vector *vec, void *item, size_t index);
 void	*ft_vecget(t_vector *vec, size_t index);
 void	ft_vecpop(t_vector *vec, size_t index);
 int		ft_vecinsert(t_vector *vec, void *item, size_t index);
-void	ft_vecinit_ptr(t_vector_ptr *vec, size_t capacity, size_t item_size);
+int		ft_vecinit_ptr(t_vector_ptr *vec, size_t capacity, size_t item_size);
 int		ft_vecappend_ptr(t_vector_ptr *vec, void *item);
 int		ft_vecresize_ptr(t_vector_ptr *vec, size_t new_capacity);
 void	ft_vecset_ptr(t_vector_ptr *vec, void *item, size_t index);

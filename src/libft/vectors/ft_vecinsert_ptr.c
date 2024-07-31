@@ -6,7 +6,7 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/17 16:16:43 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/07/15 16:09:07 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/07/31 12:05:38 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_vecinsert_ptr(t_vector_ptr *vec, void *item, size_t index)
 	{
 		while (index < vec -> size - 1)
 		{
-			vec -> items[index + 1] = vec -> items [index];
+			vec -> items[index] = vec -> items [index + 1];
 			index++;
 		}
 		ft_vecset_ptr(vec, item, index);
