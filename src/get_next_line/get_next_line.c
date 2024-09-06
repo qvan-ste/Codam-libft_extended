@@ -6,13 +6,12 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/18 11:49:20 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/06/05 15:58:24 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/09/06 14:12:52 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <get_next_line.h>
 #include <libft.h>
-#include <stdlib.h>
 
 char	*clean_ret(char *full_ret, char **buf, int *error)
 {
