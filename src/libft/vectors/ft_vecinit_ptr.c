@@ -6,11 +6,10 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/17 15:58:52 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/08/05 16:27:08 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/09/06 18:40:51 by quincy        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <vector.h>
 #include <libft.h>
 
 int	ft_vecinit_ptr(t_vector_ptr *vec, size_t capacity, size_t item_size)

@@ -6,11 +6,12 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/06 19:49:04 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/06/05 16:00:54 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/09/06 18:39:01 by quincy        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
+#include <stdlib.h>
 
 static int	n_splits(char const *s, char c)
 {

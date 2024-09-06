@@ -6,16 +6,13 @@
 /*   By: quincy <quincy@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/04 15:16:10 by quincy        #+#    #+#                 */
-/*   Updated: 2024/09/06 14:32:26 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/09/06 18:37:03 by quincy        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# include <stdint.h>
-# include <stdlib.h>
 # include <unistd.h>
-
 
 // STRUCTS
 // 	Linked lists

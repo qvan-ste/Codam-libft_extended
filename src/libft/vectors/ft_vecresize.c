@@ -6,11 +6,10 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/05 21:41:24 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/07/15 16:07:59 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/09/06 18:41:25 by quincy        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <vector.h>
 #include <libft.h>
 
 int	ft_vecresize(t_vector *vec, size_t new_capacity)

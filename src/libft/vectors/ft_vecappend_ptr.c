@@ -6,11 +6,11 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/14 17:14:54 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/07/15 16:07:45 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/09/06 18:39:52 by quincy        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <vector.h>
+#include <libft.h>
 
 int	ft_vecappend_ptr(t_vector_ptr *vec, void *item)
 {

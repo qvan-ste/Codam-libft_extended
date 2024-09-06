@@ -6,11 +6,12 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/17 16:48:15 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/08/12 16:29:46 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/09/06 18:40:31 by quincy        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <vector.h>
+#include <libft.h>
+#include <stdlib.h>
 
 void	ft_vecdelete_ptr(t_vector_ptr *vec)
 {

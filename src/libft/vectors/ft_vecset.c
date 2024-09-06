@@ -6,12 +6,11 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/05 13:04:41 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/06/17 15:04:45 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/09/06 18:41:35 by quincy        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
-#include <vector.h>
 
 void	ft_vecset(t_vector *vec, void *item, size_t index)
 {

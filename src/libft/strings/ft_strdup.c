@@ -6,11 +6,12 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/09 12:14:00 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/06/05 16:00:59 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/09/06 18:39:06 by quincy        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
+#include <stdlib.h>
 
 char	*ft_strdup(const char *s)
 {

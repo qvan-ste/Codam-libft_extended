@@ -6,11 +6,12 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/05 17:38:26 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/07/15 13:39:39 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/09/06 18:38:35 by quincy        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
+#include <stdlib.h>
 
 void	*ft_realloc(void *ptr, size_t old_size, size_t new_size)
 {

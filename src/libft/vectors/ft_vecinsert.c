@@ -6,12 +6,11 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/05 21:39:21 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/07/15 16:09:17 by qvan-ste      ########   odam.nl         */
+/*   Updated: 2024/09/06 18:41:11 by quincy        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
-#include <vector.h>
 
 int	ft_vecinsert(t_vector *vec, void *item, size_t index)
 {
