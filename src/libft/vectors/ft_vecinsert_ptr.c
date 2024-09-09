@@ -14,7 +14,7 @@
 
 int	ft_vecinsert_ptr(t_vector_ptr *vec, void *item, size_t index)
 {
-	size_t i;
+	size_t	i;
 
 	i = vec -> size;
 	if (!vec || !item || index >= vec -> size)

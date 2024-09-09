@@ -47,7 +47,6 @@ typedef struct s_vector_ptr
 	size_t		size;
 }	t_vector_ptr;
 
-
 // FUNCTIONS
 // 	Characters
 
@@ -86,7 +85,6 @@ void		*ft_memmove(void *dest, const void *src, size_t len);
 void		*ft_memset(void *s, int c, size_t n);
 void		*ft_realloc(void *ptr, size_t old_size, size_t new_size);
 
-
 // 	Output
 void		ft_putchar_fd(char c, int fd);
 void		ft_putendl_fd(char *s, int fd);
@@ -124,7 +122,8 @@ int			ft_vecappend(t_vector *vec, void *item);
 void		ft_vecdelete_ptr(t_vector_ptr *vec);
 void		*ft_vecget_ptr(t_vector_ptr *vec, size_t index);
 void		*ft_vecget(t_vector *vec, size_t index);
-int			ft_vecinit_ptr(t_vector_ptr *vec, size_t capacity, size_t item_size);
+int			ft_vecinit_ptr(t_vector_ptr *vec,
+				size_t capacity, size_t item_size);
 int			ft_vecinit(t_vector *vec, size_t capacity, size_t item_size);
 int			ft_vecinsert_ptr(t_vector_ptr *vec, void *item, size_t index);
 int			ft_vecinsert(t_vector *vec, void *item, size_t index);
