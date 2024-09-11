@@ -6,7 +6,7 @@
 /*   By: quincy <quincy@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/04 15:16:10 by quincy        #+#    #+#                 */
-/*   Updated: 2024/09/06 18:37:03 by quincy        ########   odam.nl         */
+/*   Updated: 2024/09/11 16:17:58 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,7 @@ void		ft_putnbr_fd(int n, int fd);
 void		ft_putnbr(long n);
 void		ft_putstr_fd(char *s, int fd);
 int			ft_printf(const char *format, ...);
-int			ft_printf_fd(const char *format, ...);
+int			ft_printf_fd(int fd, const char *format, ...);
 
 //	Strings
 int			ft_atoi(const char *str);
