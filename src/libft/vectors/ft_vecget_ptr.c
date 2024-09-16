@@ -6,7 +6,7 @@
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/17 15:00:44 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/09/06 18:40:42 by quincy        ########   odam.nl         */
+/*   Updated: 2024/09/16 18:25:54 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_vecget_ptr(t_vector_ptr *vec, size_t index)
 {
-	if (index >= vec -> size)
+	if (index >= vec -> capacity)
 		return (NULL);
 	return (((void **)vec->items)[index]);
 }
