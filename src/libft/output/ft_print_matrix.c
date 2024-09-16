@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_free_matrix.c                                   :+:    :+:            */
+/*   ft_print_matrix.c                                  :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: qvan-ste <qvan-ste@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2024/03/13 18:06:42 by qvan-ste      #+#    #+#                 */
-/*   Updated: 2024/09/13 14:42:10 by qvan-ste      ########   odam.nl         */
+/*   Created: 2024/09/16 16:41:07 by qvan-ste      #+#    #+#                 */
+/*   Updated: 2024/09/16 16:44:41 by qvan-ste      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <libft.h>
 
-void	ft_free_matrix(char *matrix[])
+int	ft_print_matrix(char **matrix)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (matrix[i])
 	{
-		free(matrix[i]);
+		ft_printf("%s\n", matrix[i]);
 		i++;
 	}
-	free(matrix);
+	return (i);
 }

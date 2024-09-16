@@ -45,9 +45,9 @@ MEMORY = $(MEMORYDIR)/ft_bzero.c $(MEMORYDIR)/ft_calloc.c $(MEMORYDIR)/ft_free_m
 			$(MEMORYDIR)/ft_memmove.c $(MEMORYDIR)/ft_memset.c \
 			$(MEMORYDIR)/ft_realloc.c
 
-OUTPUT = $(OUTPUTDIR)/ft_putchar_fd.c $(OUTPUTDIR)/ft_putendl_fd.c \
-			$(OUTPUTDIR)/ft_putnbr_fd.c $(OUTPUTDIR)/ft_putnbr.c \
-			$(OUTPUTDIR)/ft_putstr_fd.c
+OUTPUT = $(OUTPUTDIR)/ft_print_matrix.c $(OUTPUTDIR)/ft_putchar_fd.c \
+			$(OUTPUTDIR)/ft_putendl_fd.c $(OUTPUTDIR)/ft_putnbr_fd.c \
+			$(OUTPUTDIR)/ft_putnbr.c $(OUTPUTDIR)/ft_putstr_fd.c
 
 STRINGS = $(STRINGSDIR)/ft_atoi.c $(STRINGSDIR)/ft_atoll.c $(STRINGSDIR)/ft_itoa.c \
 			$(STRINGSDIR)/ft_split.c $(STRINGSDIR)/ft_strchr.c $(STRINGSDIR)/ft_strcmp.c \
