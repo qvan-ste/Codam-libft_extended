@@ -10,11 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <get_next_line.h>
+#define BUFFER_SIZE 10
 #include <libft.h>
 #include <stdlib.h>
 
-char	*clean_ret(char *full_ret, char **buf, int *error)
+static char	*clean_ret(char *full_ret, char **buf, int *error)
 {
 	int		len;
 	char	*ret;
@@ -43,7 +43,7 @@ char	*clean_ret(char *full_ret, char **buf, int *error)
 	return (ret);
 }
 
-char	*save_buf(char *full_buf, int *error)
+static char	*save_buf(char *full_buf, int *error)
 {
 	int		i;
 	char	*save;
@@ -71,7 +71,7 @@ char	*save_buf(char *full_buf, int *error)
 	return (save);
 }
 
-char	*read_and_append(int fd, char *buf, char **ret)
+static char	*read_and_append(int fd, char *buf, char **ret)
 {
 	char	*tmp;
 	int		char_read;
