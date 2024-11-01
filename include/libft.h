@@ -128,8 +128,8 @@ int			ft_vecinit_ptr(t_vector_ptr *vec,
 int			ft_vecinit(t_vector *vec, size_t capacity, size_t item_size);
 int			ft_vecinsert_ptr(t_vector_ptr *vec, void *item, size_t index);
 int			ft_vecinsert(t_vector *vec, void *item, size_t index);
-void		ft_vecpop_ptr(t_vector_ptr *vec, size_t index);
-void		ft_vecpop(t_vector *vec, size_t index);
+int			ft_vecpop_ptr(t_vector_ptr *vec, size_t index);
+int			ft_vecpop(t_vector *vec, size_t index);
 int			ft_vecresize_ptr(t_vector_ptr *vec, size_t new_capacity);
 int			ft_vecresize(t_vector *vec, size_t new_capacity);
 void		ft_vecset_ptr(t_vector_ptr *vec, void *item, size_t index);

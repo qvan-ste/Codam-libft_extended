@@ -13,10 +13,10 @@
 #include <libft.h>
 #include <stdlib.h>
 
-void	ft_vecpop_ptr(t_vector_ptr *vec, size_t index)
+int	ft_vecpop_ptr(t_vector_ptr *vec, size_t index)
 {
 	if (index >= vec -> size)
-		return ;
+		return (0);
 	free(ft_vecget_ptr(vec, index));
 	while (index < vec -> size - 1)
 	{
@@ -25,4 +25,7 @@ void	ft_vecpop_ptr(t_vector_ptr *vec, size_t index)
 	}
 	vec -> items[index] = NULL;
 	vec -> size--;
+	if (vec -> size <= (vec -> capacity / 4))
+		return (ft_vecresize_ptr(vec, vec -> capacity / 2));
+	return (0);
 }

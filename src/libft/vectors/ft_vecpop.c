@@ -12,10 +12,10 @@
 
 #include <libft.h>
 
-void	ft_vecpop(t_vector *vec, size_t index)
+int	ft_vecpop(t_vector *vec, size_t index)
 {
 	if (index >= vec -> size)
-		return ;
+		return (0);
 	if (index != vec -> size - 1)
 	{
 		ft_memmove(vec -> items + index * vec -> item_size,
@@ -25,4 +25,7 @@ void	ft_vecpop(t_vector *vec, size_t index)
 	ft_bzero(ft_vecget(vec, vec -> size - 1),
 		(vec -> capacity - vec -> size) * vec -> item_size);
 	vec -> size--;
+	if (vec -> size <= (vec -> capacity / 4))
+		return (ft_vecresize(vec, vec -> capacity / 2));
+	return (0);
 }
