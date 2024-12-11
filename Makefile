@@ -29,8 +29,8 @@ GET_NEXT_LINE = $(GET_NEXT_LINEDIR)/get_next_line.c
 
 CHARACTERS = $(CHARACTERSDIR)/ft_isalnum.c $(CHARACTERSDIR)/ft_isalpha.c \
 				$(CHARACTERSDIR)/ft_isascii.c $(CHARACTERSDIR)/ft_isdigit.c \
-				$(CHARACTERSDIR)/ft_isprint.c $(CHARACTERSDIR)/ft_tolower.c \
-				$(CHARACTERSDIR)/ft_toupper.c
+				$(CHARACTERSDIR)/ft_isprint.c $(CHARACTERSDIR)/ft_isspace.c \
+				$(CHARACTERSDIR)/ft_tolower.c $(CHARACTERSDIR)/ft_toupper.c
 
 LISTS = $(LISTSDIR)/ft_lstadd_back.c $(LISTSDIR)/ft_lstadd_front.c \
 		$(LISTSDIR)/ft_lstdoubadd_back.c $(LISTSDIR)/ft_lstdoubadd_front.c \
